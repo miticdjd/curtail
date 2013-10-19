@@ -22,3 +22,5 @@ from folder css you don't need to call them individually like this:
 
 With curtail you can do in this way:
 - &lt;link rel="stylesheet" href="/css/ui-lightness/jquery-ui-1.10.3.custom.min.css,bootstrap.min.css,bootstrap-theme.min.css"&gt;
+
+You can also do this in same way for javascript files. You can open demo.html to see in action curtail. Open firebug or similar tool to see curtail performances.
