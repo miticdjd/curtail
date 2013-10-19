@@ -13,9 +13,11 @@ $files = explode(',', $fileNames);
 /* Let's get base directory */
 switch ($type) {
     case 'css':
+        $contentType = 'text/css';
         $baseDir = CSS_DIR;
         break;
     case 'js':
+        $contentType = 'application/javascript';
         $baseDir = JS_DIR;
         break;
     default:
@@ -77,7 +79,7 @@ if (isset($_SERVER['HTTP_IF_NONE_MATCH']) && stripslashes($_SERVER['HTTP_IF_NONE
                 header('Content-Encoding: ' . $encoding);
             }
 
-            header('Content-Type: text/' . $type);
+            header('Content-Type: ' . $contentType);
             header('Content-Length: ' . filesize(CACHE_DIR . $filename));
 
             fpassthru($file);
@@ -91,7 +93,7 @@ if (isset($_SERVER['HTTP_IF_NONE_MATCH']) && stripslashes($_SERVER['HTTP_IF_NONE
             $content .= '\n\n' . file_get_contents($baseDir . $file);
         }
         
-        header ('Content-Type: text/' . $type);
+        header ('Content-Type: ' . $contentType);
         
         if ($encoding != 'none') {
             /* Send compressed content */
