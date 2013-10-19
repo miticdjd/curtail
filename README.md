@@ -16,9 +16,9 @@ bootstrap.min.css
 bootstrap-theme.min.css
 
 from folder css you don't need to call them individually like this:
-<link rel="stylesheet" href="/css/ui-lightness/jquery-ui-1.10.3.custom.min.css">
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+&lt;link rel="stylesheet" href="/css/ui-lightness/jquery-ui-1.10.3.custom.min.css"&gt;
+&lt;link rel="stylesheet" href="/css/bootstrap.min.css"&gt;
+&lt;link rel="stylesheet" href="/css/bootstrap-theme.min.css"&gt;
 
 With curtail you can do in this way:
-<link rel="stylesheet" href="/css/ui-lightness/jquery-ui-1.10.3.custom.min.css,bootstrap.min.css,bootstrap-theme.min.css">
+&lt;link rel="stylesheet" href="/css/ui-lightness/jquery-ui-1.10.3.custom.min.css,bootstrap.min.css,bootstrap-theme.min.css"&gt;
