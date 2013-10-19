@@ -1,7 +1,6 @@
 <?php
 
 /* Setup folders */
-define('CACHE', true);
 define('CACHE_DIR', realpath(dirname(__FILE__)) . '/cache/');
 define('CSS_DIR', realpath(dirname(__FILE__)) . '/css/');
 define('JS_DIR', realpath(dirname(__FILE__)) . '/js/');
